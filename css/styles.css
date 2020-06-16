@@ -1,3 +1,241 @@
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
 @-ms-viewport{
   width: device-width;
 }
+
+html, body, main {
+  top: 0;
+  background-color: #C9B677;
+  width: 100%;
+  min-width: 320px; }
+
+/** HEADER ON HOME PAGE/INDEX.HTML **/
+header {
+  justify-content: center;
+  width: 100%;
+  border: 2px solid black;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg");
+  margin-bottom: 10px; }
+
+.title {
+  /** Plan it **/
+  font-family: "Lato", Verdana, sans-serif;
+  font-size: 12em;
+  color: darkgreen;
+  margin-top: 0.2em; }
+
+.fa.fa-globe {
+  /** globe icon in header **/
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/** end of header **/
+/**  bootstrap container div **/
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/** HOME PAGE ROUTING BUTTONS FOR 3 HTML VIEWS**/
+/** angular routing buttons on index.html **/
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 5px; }
+
+/** hrefs **/
+a {
+  background-color: transparent;
+  font-size: 22px; }
+
+.navbar-brand {
+  font-size: 20px; }
+
+.btn.btn-success {
+  text-align: center; }
+
+/** logo in header of the earth **/
+h2 {
+  text-align: center; }
+
+h3 {
+  text-align: center; }
+
+h4 {
+  padding: 10px;
+  text-align: center;
+  color: #337ab7;
+  font-size: 20px;
+  font-family: "Lato", Verdana, sans-serif; }
+
+p {
+  margin-top: 10px;
+  font-size: 30px;
+  color: darkgreen; }
+
+.modal-dialog {
+  box-shadow: 10px 10px 38px 21px #001f3b; }
+
+.how {
+  font-family: "Lato", Verdana, sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px; }
+
+.glyphicon.glyphicon-leaf {
+  margin-right: 15px; }
+
+/** end of nav-pills **/
+/** CONDITIONS PAGE(VIEW) **/
+/** Conditions.html view **/
+#conditions {
+  position: absolute;
+  width: 102%;
+  height: 150%;
+  background-color: #C9B677; }
+
+form {
+  text-align: center; }
+
+label {
+  color: black;
+  padding: 10px;
+  font-size: 1.5em; }
+
+select {
+  font-size: 1em; }
+
+.btn {
+  display: block;
+  margin: auto;
+  padding: 10px 10px; }
+
+#selectionWrapper {
+  height: 100%; }
+
+/** ACCORDION SET UP **/
+#area-conditions {
+  padding-top: 4em;
+  color: darkgreen;
+  border-bottom: 1px solid #343536;
+  font-size: 3em;
+  font-weight: 300;
+  font-style: normal;
+  cursor: pointer; }
+
+#climate-zone {
+  padding-top: 1em;
+  color: darkgreen;
+  border-bottom: 1px solid #343536;
+  font-size: 3em;
+  font-weight: 300;
+  font-style: normal;
+  cursor: pointer; }
+
+/** end of conditions page **/
+/** PLANTS PAGE(VIEW) **/
+/** Plants.html view **/
+#plants {
+  position: absolute;
+  width: 102%;
+  height: 150%;
+  background-color: #C9B677; }
+
+.fieldset-group {
+  margin-top: 4em;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%; }
+
+/** home icon **/
+.fa.fa-home {
+  color: black;
+  margin-top: 0.5em;
+  margin-left: 0.5em; }
+
+/** Plant Names **/
+.PN {
+  font-size: 3em; }
+
+.nav-tabs {
+  text-align: center;
+  color: darkcyan; }
+
+li {
+  padding-right: 10px;
+  padding-top: 1em; }
+
+/** end of plants page **/
+/** LOCAL NURSERIES PAGE(VIEW) **/
+/** local-nurseries.html **/
+#local-nurseries {
+  position: absolute;
+  width: 102%;
+  height: 150%;
+  background-color: #C9B677; }
+
+.nurseries {
+  margin-top: 10em;
+  border: none;
+  color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px; }
+
+.options {
+  margin-top: 7px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  background-color: lightcyan; }
+
+.additional-info {
+  outline: 1px solid black;
+  margin-top: auto;
+  text-align: center;
+  margin: auto;
+  background-color: lightcyan; }
+
+.local {
+  text-align: center;
+  background-color: lightcyan;
+  padding: 20px;
+  font-size: 4em;
+  color: darkgreen; }
+
+.bld {
+  font-size: 30px;
+  display: block;
+  padding: 10px; }
+
+.buy {
+  font-size: 30px;
+  display: block;
+  padding: 10px; }
+
+/** footer **/
+.text-center {
+  background-color: black;
+  border: 2px solid black; }
+
+/** end of local-nurseries page **/
+@media screen and (min-width: 966px) {
+  .container-fluid {
+    width: 100%; } }
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    width: 100%; } }
+@media screen and (min-width: 320px) {
+  .container-fluid {
+    width: 100%; } }
+/*# sourceMappingURL=styles.css.map */
