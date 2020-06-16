@@ -26,61 +26,62 @@
 
 <body ng-app="planit">
 
-  <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+        <!-- <div class="container-fluid"> -->
 
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
 
-              <a class="navbar-brand" href="#">Plan<span class="fa fa-globe"></span>it</a>
-          </div>
+                <a class="navbar-brand" href="#">Plan<span class="fa fa-globe"></span>it</a>
+            </div>
 
-          <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#/index">Home</a></li>
-                  <li><a href="#/conditions">Location</a></li>
-                  <li><a href="#/local-nurseries">Local Nurseries</a></li>
-              </ul>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#/index">Home</a></li>
+                    <li><a href="#/conditions">Location</a></li>
+                    <li><a href="#/local-nurseries">Local Nurseries</a></li>
+                    <li><a href="#/local-nurseries">plants</a></li>
+                </ul>
 
-          </div>
+            </div>
 
 
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
   How it works
 </button>
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title" id="myModalLabel">How it Works</h4>
-                      </div>
-                      <div class="modal-body">
-                          <h2>Location, Location, Location...what to plant where?
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">How it Works</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h2>Location, Location, Location...what to plant where?
             </h2>
-                          <ul class="how">
-                              <li class="howTo"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Click on the "Location" tab in the header.</br>
-                                  (Make "nature of the location" choices that apply to you and press the <strong> "submit"</strong> button. 3 plant options will appear for your considerations).</li>
-                              <li class="howT"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Go to the "Local Nurseries" tab and find a local nursery near you to to purchase these plants.</li>
-                          </ul>
-                          <h3>That's it.  Have fun and happy planting.</h3>
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                      </div>
-                  </div>
-              </div>
-          </div>
-  </nav>
-    <div class="container-fluid">
+                            <ul class="how">
+                                <li class="howTo"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Click on the "Location" tab in the header.</br>
+                                    (Make "nature of the location" choices that apply to you and press the <strong> "submit"</strong> button. 3 plant options will appear for your considerations).</li>
+                                <li class="howT"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Go to the "Local Nurseries" tab and find a local nursery near you to to purchase these plants.</li>
+                            </ul>
+                            <h3>That's it.  Have fun and happy planting.</h3>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <!-- <div class="container-fluid"> -->
         <header>
             <!-- This is the landing page banner -->
             <h1 class="title">Plan<span class="fa fa-globe fa-2x"></span>it</h1>
@@ -92,23 +93,7 @@
 
         <div ng-view></div>
 
-        <script type="text/ng-template" id="index.html">
-            Plan-it
-            <ul>
-                <li> a simple Angular app using ng - router </li>
-                <li>demonstrate the changing of routes</li>
-                <li> demonstrate the triggering of a funcion based on routed state change</li>
-            </ul>
-        </script>
-        <script type="text/ng-template" id="conditions.html">
 
-        </script>
-        <script type="text/ng-template" id="local-nurseries.html">
-
-        </script>
-        <script type="text/ng-template" id="plants.html">
-
-        </script>
         <!--- Angular CDN ------>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.4-build.3588/angular.js" integrity="sha256-aevHewM8BXsquN9Ki/gCiaoOexmujmIZuEIyoAMxHw0=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.4-build.3588/angular.min.js" integrity="sha256-UYxsBli+wc8cHs1SVw0hYf3llQlUwLuKnRii303Ivk0=" crossorigin="anonymous"></script>
