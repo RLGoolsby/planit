@@ -1,3 +1,4 @@
+
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
 @-ms-viewport{
@@ -16,6 +17,7 @@ header {
   width: 100%;
   border: 2px solid black;
   background-image: url("https://static.vecteezy.com/system/resources/previews/000/081/782/non_2x/free-plant-vectors.jpg");
+  background-color: darkgreen;
   margin-bottom: 10px; }
 
 .title {
@@ -238,4 +240,6 @@ li {
 @media screen and (min-width: 320px) {
   .container-fluid {
     width: 100%; } }
+/*# sourceMappingURL=styles.css.map */
+
 /*# sourceMappingURL=styles.css.map */
